@@ -1,27 +1,6 @@
-﻿# STUTT (Safe Tiered Task/Tool)
-
-STUTT is a bounded command-path prototype with strict allow-listed actions and optional model-assisted intent parsing.
-
-## What works now
-- Local safe command routing
-- Allow-list execution with clear outcomes
-- Optional NVIDIA/open-weight routing via `stutt_model_adapter.py`
-- Read-only Tier-3 command surface
-
-## Run
-```powershell
-python .\stutt_command_path.py --input "status"
-python .\stutt_command_path.py --input "commands"
-python .\stutt_command_path.py --input "count Reubarb has five glyph mappings"
-python .\stutt_command_path.py --model --input "show me glyph files"
-
-Create `LICENSE` (MIT):
-
-```powershell
-@'
 MIT License
 
-Copyright (c) 2026
+Copyright (c) 2026 TripleColonOperator
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

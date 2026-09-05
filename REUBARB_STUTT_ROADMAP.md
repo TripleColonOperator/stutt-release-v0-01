@@ -1,14 +1,24 @@
 # Reubarb Pi, STUTT, and public release
 
-Status: working delivery plan, 2026-09-05. The user confirmed that the glyphs
-render after a computer restart, requested larger glyphs while keeping ordinary
-text at its existing size, and named the intended personal assistant STUTT.
-This plan records that direction; new language rules still follow the existing
-approval process in AGENTS.md.
+Status: broader-project roadmap snapshot, 2026-09-05.
+
+Package scope: this public beta contains the Python command prototype and its
+model adapter, example configuration, and release documents. The language core,
+glyph/font assets, voice interface, research materials, and development gate
+documents described below are not bundled. See README.md for this package's
+quickstart and known limitations.
+
+Project direction: develop the personal assistant STUTT and make native glyphs
+legible while preserving ordinary text size. New language rules follow the
+development workspace's approval process. References to AGENTS.md and numbered
+gates below describe that workspace, not additional files required to run this
+release.
 
 ## Where we are
 
-The foundation is working, but the general language is not finished:
+The broader development workspace has working foundation components, but the
+general language is not finished. This table describes that workspace rather
+than the contents of the public beta:
 
 | Component | Present capability | Remaining work |
 | --- | --- | --- |
@@ -71,7 +81,12 @@ The first executable STUTT command path is now scaffolded in
   `status-overview`
 - optional model-assisted intent normalization through the NVIDIA-first adapter config
 - one-shot and interactive modes
-- no filesystem mutation or external side-effectful action yet, only local output
+- built-in actions do not edit files; optional model routing can make network
+  requests and fall back from a local endpoint to a configured cloud endpoint
+
+The standalone release has command and missing-asset issues recorded in
+README.md. This list describes the registered command surface, not a claim that
+every command works correctly in this package.
 
 Model provider strategy is now explicit:
 
