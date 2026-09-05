@@ -1,6 +1,7 @@
 # Reubarb Pi, STUTT, and public release
 
-Status: broader-project roadmap snapshot, 2026-09-05.
+Status: broader-project roadmap snapshot, 2026-09-05; package notes updated for
+`v0.1.1-beta`.
 
 Package scope: this public beta contains the Python command prototype and its
 model adapter, example configuration, and release documents. The language core,
@@ -79,23 +80,35 @@ The first executable STUTT command path is now scaffolded in
   `upper`, `lower`, `json`, `font`, `glyphs`, `model-backends`,
   `list-files`, `check-glyph-map`, `env-profile`, `readme`, `roadmap`,
   `status-overview`
-- optional model-assisted intent normalization through the NVIDIA-first adapter config
+- optional model-assisted intent normalization through a configurable
+  OpenAI-compatible adapter
 - one-shot and interactive modes
 - built-in actions do not edit files; optional model routing can make network
-  requests and fall back from a local endpoint to a configured cloud endpoint
+  requests; fallback requires `--model-fallback`, and the cloud example is
+  disabled by default
 
-The standalone release has command and missing-asset issues recorded in
-README.md. This list describes the registered command surface, not a claim that
-every command works correctly in this package.
+The `v0.1.1-beta` fixes preserve command payload case and whitespace, repair file
+listing and document paths, validate model/configuration input, and handle
+expected CLI failures. The standalone package still lacks glyph/font assets;
+those inspection commands report missing files. See [README.md](README.md) and
+[CHANGELOG.md](CHANGELOG.md) for the package scope, test command, and limits.
 
-Model provider strategy is now explicit:
+Model provider direction and current adapter scope:
 
-- NVIDIA/open-weight endpoints are the preferred first stack.
-- Reubarb/STUTT core behavior stays unchanged and calls only the adapter contract.
-- Model provider integration is replaceable: any OpenAI-compatible backend can be
-  added by editing one config file and creating one backend class if needed.
-- For NVIDIA, start with `stutt_model_backends.example.json` and `NVIDIA_API_KEY`
-  (or your own env var name) and run the adapter without changing STUTT logic.
+- NVIDIA/open-weight endpoints are a preferred development direction, not a
+  verified deployment or a bundled GPU runtime.
+- STUTT routes model requests through the adapter contract. The public package
+  does not include the complete Reubarb language layer.
+- The current adapter supports synchronous text responses from compatible
+  chat-completion endpoints. Matching local or hosted services can be configured
+  without changing command routing; other protocols need separate adapter work.
+- Start with `stutt_model_backends.example.json` and save personal changes in
+  `stutt_model_backends.local.json`. Match the local model ID to your running
+  service. Local authentication is optional; hosted authentication should use
+  the configured environment variable. Enable remote entries deliberately.
+- Backend requests are mocked in the regression suite. No live NVIDIA backend,
+  model weights, GPU execution, or inference performance was verified for this
+  beta.
 
 Test cancellation and complete child-process cleanup, mistakes in tool requests,
 unrecognized input, authorization boundaries and recovery. Improvement can

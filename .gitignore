@@ -7,3 +7,9 @@
 .env*
 tmp/
 .vscode/
+.venv/
+venv/
+stutt_model_backends.json
+stutt_model_backends.local.json
+stutt_model_backends.*.local.json
+secrets/

@@ -2,9 +2,9 @@
   "openai_compatible": [
     {
       "name": "nvidia-local-stack",
-      "model": "nvidia/llama-3.1-nemotron-nano-4b-instruct",
+      "model": "your-local-model-id",
       "base_url": "http://localhost:8000",
-      "api_key_env": "NVIDIA_API_KEY",
+      "api_key_env": null,
       "api_key": null,
       "request_path": "/v1/chat/completions",
       "temperature": 0.2,
@@ -14,15 +14,15 @@
     },
     {
       "name": "nvidia-cloud-nim",
-      "model": "nvidia/llama-3.1-nemotron-70b-instruct",
-      "base_url": "https://api.nvidia.com/v1",
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "base_url": "https://integrate.api.nvidia.com/v1",
       "api_key_env": "NVIDIA_API_KEY",
       "api_key": null,
       "request_path": "/chat/completions",
       "temperature": 0.2,
       "max_tokens": 1024,
       "timeout_seconds": 60.0,
-      "enabled": true
+      "enabled": false
     }
   ]
 }
