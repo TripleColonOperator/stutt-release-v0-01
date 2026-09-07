@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1200" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title">
+  <title id="title">Reubarb Pi V0.1 G4 Strong-variant geometry</title>
+  <circle cx="500" cy="150" r="70" fill="currentColor" />
+  <circle cx="220" cy="500" r="70" fill="currentColor" />
+  <circle cx="780" cy="500" r="70" fill="currentColor" />
+  <circle cx="500" cy="950" r="70" fill="currentColor" />
+  <path d="M500 410V630M390 520H610" fill="none" stroke="currentColor" stroke-width="30" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

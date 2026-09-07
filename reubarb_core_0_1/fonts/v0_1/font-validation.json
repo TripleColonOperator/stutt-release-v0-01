@@ -1,0 +1,135 @@
+{
+  "profile": "reubarb-font-i13-qa-0.100",
+  "font_sha256": "3535d0845348c0d9d3e64560897df023a0edbb837a96e2b85741d54ec71c3595",
+  "result": "passed",
+  "rebuild_byte_identical": true,
+  "ots": {
+    "exit_code": 0,
+    "output": "File sanitized successfully!",
+    "warnings": "",
+    "sanitized_sha256": "69110779fed5bc61652e6afa71f3a625587756995461cfc0474bd3b8fdb26c2a"
+  },
+  "harfbuzz": "5 exact mappings; forward, reverse, 320-character sequence; uniform advances; 6 unmapped controls",
+  "renderer": "Skia native font loading/rasterization compared with its independent SVG DOM rendering path",
+  "sizes_px": [
+    12,
+    14,
+    16,
+    18,
+    20,
+    22,
+    24,
+    32,
+    48,
+    96
+  ],
+  "glyph_comparisons": [
+    {
+      "design_id": 2,
+      "relative_ink_error_at_2048_px": 0.01308714592977479,
+      "reference_bounds": [
+        255,
+        412,
+        981,
+        1435
+      ],
+      "font_bounds": [
+        255,
+        412,
+        981,
+        1435
+      ],
+      "components_and_holes_at_256_px": [
+        2,
+        2
+      ]
+    },
+    {
+      "design_id": 3,
+      "relative_ink_error_at_2048_px": 0.011596525220135915,
+      "reference_bounds": [
+        187,
+        345,
+        1049,
+        1503
+      ],
+      "font_bounds": [
+        187,
+        345,
+        1049,
+        1503
+      ],
+      "components_and_holes_at_256_px": [
+        2,
+        2
+      ]
+    },
+    {
+      "design_id": 4,
+      "relative_ink_error_at_2048_px": 0.0051514862186121885,
+      "reference_bounds": [
+        187,
+        345,
+        1049,
+        1503
+      ],
+      "font_bounds": [
+        187,
+        345,
+        1049,
+        1503
+      ],
+      "components_and_holes_at_256_px": [
+        5,
+        0
+      ]
+    },
+    {
+      "design_id": 5,
+      "relative_ink_error_at_2048_px": 0.0054453377181576884,
+      "reference_bounds": [
+        187,
+        345,
+        1049,
+        1503
+      ],
+      "font_bounds": [
+        187,
+        345,
+        1049,
+        1503
+      ],
+      "components_and_holes_at_256_px": [
+        5,
+        0
+      ]
+    },
+    {
+      "design_id": 6,
+      "relative_ink_error_at_2048_px": 0.005500342585459519,
+      "reference_bounds": [
+        187,
+        345,
+        1049,
+        1503
+      ],
+      "font_bounds": [
+        187,
+        345,
+        1049,
+        1503
+      ],
+      "components_and_holes_at_256_px": [
+        5,
+        0
+      ]
+    }
+  ],
+  "proof_sha256": "48343c3dc758333227289935ef29ff86cd97bb695e27fd9a93ff3b3075359566",
+  "checker_sha256": "2d4c0a2a1f10d496a517b199d201643bb07b5a0280c04eaee10739b00e5c0711",
+  "limits": [
+    "Finite checks are not proof of absolute correctness or complete security.",
+    "SVG and font comparison paths share Skia; OTS and HarfBuzz are independent validators.",
+    "Visual proof must be inspected; actual VS Code cursor/fallback behavior is a later installation check."
+  ]
+}

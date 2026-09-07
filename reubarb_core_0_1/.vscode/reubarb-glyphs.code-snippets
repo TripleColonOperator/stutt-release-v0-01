@@ -1,0 +1,32 @@
+{
+  "Reubarb G2": {
+    "prefix": "rb.g2",
+    "body": "\uE100",
+    "description": "Insert approved Reubarb G2 scalar U+E100",
+    "include": ["**/*.gart"]
+  },
+  "Reubarb G3": {
+    "prefix": "rb.g3",
+    "body": "\uE101",
+    "description": "Insert approved Reubarb G3 scalar U+E101",
+    "include": ["**/*.gart"]
+  },
+  "Reubarb G4": {
+    "prefix": "rb.g4",
+    "body": "\uE102",
+    "description": "Insert approved Reubarb G4 scalar U+E102",
+    "include": ["**/*.gart"]
+  },
+  "Reubarb G5": {
+    "prefix": "rb.g5",
+    "body": "\uE103",
+    "description": "Insert approved Reubarb G5 scalar U+E103",
+    "include": ["**/*.gart"]
+  },
+  "Reubarb G6": {
+    "prefix": "rb.g6",
+    "body": "\uE104",
+    "description": "Insert approved Reubarb G6 scalar U+E104",
+    "include": ["**/*.gart"]
+  }
+}

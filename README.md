@@ -5,7 +5,7 @@ and optional model-assisted intent routing. Built-in commands run locally withou
 requiring a model. The optional adapter can connect to separately configured
 local or hosted model services.
 
-Version: `v0.1.1-beta`. This release is for review, testing, and community scrutiny
+Version: `v0.1.2-beta`. This release is for review, testing, and community scrutiny
 before expanding to broader capabilities. See [CHANGELOG.md](CHANGELOG.md) for
 the beta fixes and verification limits.
 
@@ -26,13 +26,17 @@ the beta fixes and verification limits.
   Standard-library regression tests with mocked model requests.
 - `REUBARB_STUTT_ROADMAP.md`
   Design context and near-term roadmap.
+- `reubarb_core_0_1/`
+  Frozen Core 0.1 Foundation: contract, reference modules, 400 tests, native
+  glyph sources, font, previews, integrity inventory, and scoped licenses.
 - release metadata:
   - `README.md`, `CHANGELOG.md`, `.gitignore`, `LICENSE`, `CONTRIBUTING.md`,
     `SECURITY.md`
 
-The full Reubarb language implementation, font/glyph assets, voice interface,
-model weights, and model server are not included in this package. The roadmap
-also describes work in the larger development workspace.
+Core 0.1 is a bounded Foundation, not the full Reubarb language. The later
+general value system, complete expression/evaluation language, voice interface,
+model weights, and model server are not included. The roadmap also describes
+work beyond this release.
 
 ## How to run
 
@@ -126,8 +130,9 @@ connection, model download, or GPU execution was verified for this release.
 
 ## Registered commands
 
-The command registry contains the following entries. Glyph and font commands
-report missing assets in this standalone package, as described below.
+The command registry contains the following entries. The frozen Core 0.1 assets
+are intentionally kept in their own directory and are not automatically used by
+the separate STUTT command path.
 
 - `status`
 - `commands`
@@ -155,10 +160,10 @@ Built-in actions do not provide file editing, deletion, or arbitrary shell
 execution. Optional model routing can make network requests as described above.
 The allow-list is a prototype boundary, not a security certification.
 
-- `font`, `glyphs`, and `check-glyph-map` refer to development-workspace assets
-  absent from this package and report missing files. No font installation or
-  glyph rendering is provided.
-- There is no finished Reubarb language, voice interface, model training,
+- `font`, `glyphs`, and `check-glyph-map` still inspect the repository root and
+  may report missing files. Inspect and test the included assets directly under
+  `reubarb_core_0_1/`; automatic STUTT integration remains future work.
+- There is no finished general Reubarb language, voice interface, model training,
   bundled model weights, or inference server in this release.
 - NVIDIA and open-weight model integration means a configurable compatible
   endpoint. It does not imply a tested NVIDIA deployment or built-in GPU support.
@@ -189,6 +194,9 @@ Use issue reports with:
 - python version / OS
 - `--model` enabled or not
 
-## License
+## Licenses
 
-MIT License. See [LICENSE](LICENSE).
+The STUTT code remains under the [MIT License](LICENSE). The Core 0.1 directory
+contains its own [license scope](reubarb_core_0_1/LICENSE_SCOPE.md): Core code
+and documentation are MIT, while the font and specified glyph artifacts use
+the SIL Open Font License 1.1.

@@ -1,0 +1,592 @@
+{
+  "format": "reubarb-core-inventory-1",
+  "candidate": "core-0.1-i23-candidate-1",
+  "purpose": "Fixed candidate inventory for explicit user freeze review; not approval or publication.",
+  "contract_target": "Core 0.1",
+  "contract_document_revision": "I-23.3 (portable release instructions)",
+  "created_on": "2026-09-06",
+  "algorithm": "SHA256",
+  "path_base": "Directory containing this manifest; forward-slash relative paths.",
+  "host_profile": "CPython 3.13 / Windows x64; standard-library regression, no third-party packages required.",
+  "expected_gate_tests": 400,
+  "expected_example_blocks": 5,
+  "profiles": {
+    "transport_schema": "gart-transport-observation-0.1",
+    "transport": "core-0.1",
+    "source": "gart-source-profile-inspector-i4-0.1",
+    "lexical": "gart-lexical-frontend-i5-0.1",
+    "syntax": "gart-syntax-skeleton-i6-0.1",
+    "read": "gart-read-instruction-i7-0.1",
+    "display": "gart-glyph-display-i12-0.1",
+    "glyph_source": "gart-native-glyph-source-integration-i15-0.1",
+    "glyph_value": "gart-inert-glyph-identity-value-i16-0.1",
+    "continuity": "gart-occurrence-continuity-i18-0.1",
+    "unicode": "17.0.0",
+    "font_profile": "reubarb-font-i13-0.100",
+    "font_version": "0.100"
+  },
+  "integrity_limits": [
+    "Hashes detect listed-file drift relative to a trusted manifest; they are not signatures or proof of language correctness.",
+    "This manifest intentionally excludes itself and mutable gate, roadmap, queue and evidence records to avoid circular hashes.",
+    "Unlisted files are not approved, frozen, scanned, or authenticated by this check.",
+    "Font-tool notices are retained provenance; inclusion does not install tools or grant public artwork redistribution rights.",
+    "Historical asset status fields remain byte-exact; later decisions in AGENTS.md determine approval status."
+  ],
+  "companion_records_not_frozen": [
+    "AGENTS.md",
+    "CONVENTIONAL_FOUNDATIONS_HANDOFF.md",
+    "PUBLIC_RELEASE_SYNC_QUEUE.md",
+    "REUBARB_STUTT_ROADMAP.md",
+    "CORE_0_1_FREEZE_REVIEW.md"
+  ],
+  "file_count": 91,
+  "total_bytes": 770784,
+  "files": [
+    {
+      "path": "core_0_1_transport_kernel.py",
+      "role": "gate-file",
+      "bytes": 8493,
+      "sha256": "4da477823e62395d0d133073f256f1c54055c98dcdbc8a194c3f3c92ce8fc60b"
+    },
+    {
+      "path": "test_core_0_1_transport_kernel.py",
+      "role": "gate-file",
+      "bytes": 12924,
+      "sha256": "1642516a1dee16a577b505b43a054a1386dac9db8d6fc3cc31bfca4cdaa55d95"
+    },
+    {
+      "path": "core_0_1_transcript_runtime.py",
+      "role": "gate-file",
+      "bytes": 6558,
+      "sha256": "1c1e529005fd7fb68871929573e79abfa47e5cc6b4c2860e63d129e56cb58be4"
+    },
+    {
+      "path": "test_core_0_1_transcript_runtime.py",
+      "role": "gate-file",
+      "bytes": 13603,
+      "sha256": "a2fe3bd88fdb4aafe39780fb2d4a292ff460401444755eeae06290e8e014baa5"
+    },
+    {
+      "path": "test_core_0_1_package_boundaries.py",
+      "role": "gate-file",
+      "bytes": 10075,
+      "sha256": "e753124b8c86d9a44be4dac2facd430d0a858f424f7c694da21e7cf047f89111"
+    },
+    {
+      "path": "run_core_0_1_checks.py",
+      "role": "gate-file",
+      "bytes": 9732,
+      "sha256": "3cdeff2476ae19d1ebf210d30102881ffbd0aa74f1e60522b39edc4417fcdb4f"
+    },
+    {
+      "path": "core_0_1_source_profile.py",
+      "role": "gate-file",
+      "bytes": 14773,
+      "sha256": "33a1727fb0937db78928beb1ce9646f0afeea90793cbebccbd2cdebdf49c5a20"
+    },
+    {
+      "path": "test_core_0_1_source_profile.py",
+      "role": "gate-file",
+      "bytes": 21876,
+      "sha256": "2908a933f2c58e642fb6df8185b9c4a83639ec18e4e203cdb7be71208e135832"
+    },
+    {
+      "path": "core_0_1_lexical_frontend.py",
+      "role": "gate-file",
+      "bytes": 11553,
+      "sha256": "8d7a55477a718445add1bae4cbc79bee96d69982bf4f01f078d81ca49c22eb91"
+    },
+    {
+      "path": "test_core_0_1_lexical_frontend.py",
+      "role": "gate-file",
+      "bytes": 22157,
+      "sha256": "c3effa0872191ccf4ba6aa17c0db10a50bce623d85c8b23917e06ce48bb87259"
+    },
+    {
+      "path": "core_0_1_syntax_skeleton.py",
+      "role": "gate-file",
+      "bytes": 16643,
+      "sha256": "20fac9e8e65cead563f9a0afb2ac3696da060e92b051eae9d44d222f4a1794ce"
+    },
+    {
+      "path": "test_core_0_1_syntax_skeleton.py",
+      "role": "gate-file",
+      "bytes": 27684,
+      "sha256": "a0acd785a097420285dbcac8459ff008f09e81f44649b147d8d85cb5ea1d737e"
+    },
+    {
+      "path": "core_0_1_read_instruction.py",
+      "role": "gate-file",
+      "bytes": 9555,
+      "sha256": "22cd2f6441c7ad4c3eee3f0c49280cab6e5236dfd3ec6e9e073c789e8303c4fe"
+    },
+    {
+      "path": "test_core_0_1_read_instruction.py",
+      "role": "gate-file",
+      "bytes": 37604,
+      "sha256": "fa9ac9a15509918898345930c74ebb7faba1e1882eefa08018622292280ff9ce"
+    },
+    {
+      "path": "core_0_1_glyph_technical.py",
+      "role": "gate-file",
+      "bytes": 4490,
+      "sha256": "9bdabb409ac9b4f3a6cca24f927854ad4a075dadd7fb176fca37cbd5a0386785"
+    },
+    {
+      "path": "test_core_0_1_glyph_technical.py",
+      "role": "gate-file",
+      "bytes": 3120,
+      "sha256": "63d75da7ea9407a92457748c01ad3bee3e99870e2e2cefe119e0fbbd3e9941cd"
+    },
+    {
+      "path": "run_core_0_1_glyph_checks.py",
+      "role": "gate-file",
+      "bytes": 2781,
+      "sha256": "4325696b57d5a4364d98699fe6166c32c6ebde282b25d533ba63aebba74e00e5"
+    },
+    {
+      "path": "core_0_1_glyph_geometry.py",
+      "role": "gate-file",
+      "bytes": 4401,
+      "sha256": "d8bdc4d8fa867ef89fa8dac04ba4aed55b8e67a1579a588b731a22ea426adeb5"
+    },
+    {
+      "path": "test_core_0_1_glyph_geometry.py",
+      "role": "gate-file",
+      "bytes": 4778,
+      "sha256": "d4400d84312164cb02fe106cd6f3a8425bd5561aa2dc3894a821d9f3263e1fc9"
+    },
+    {
+      "path": "run_core_0_1_glyph_geometry_checks.py",
+      "role": "gate-file",
+      "bytes": 2606,
+      "sha256": "0bcbca7ab9518b68a03860e3b0fa5e6d692171e739ac749b89d43147bb6816a1"
+    },
+    {
+      "path": "glyphs/v0_1/rp_component_four_dot_frame.svg",
+      "role": "gate-file",
+      "bytes": 458,
+      "sha256": "be2971bb99a95ed65952f18472cafcedb1b0ab1c768e2251f7bdc676c425eb53"
+    },
+    {
+      "path": "glyphs/v0_1/rp_g02_congruent_statement.svg",
+      "role": "gate-file",
+      "bytes": 515,
+      "sha256": "cb8805479de603ed867059647a566dc6c746e020edff601a27955c1907380a42"
+    },
+    {
+      "path": "glyphs/v0_1/rp_g03_fulfilled_overlay.svg",
+      "role": "gate-file",
+      "bytes": 745,
+      "sha256": "1f4a08991e74d0694b6cc1c89c8458880773b497595e60d1a556ede7bfe7e2eb"
+    },
+    {
+      "path": "glyphs/v0_1/rp_g04_strong_variant.svg",
+      "role": "gate-file",
+      "bytes": 585,
+      "sha256": "3fdb6de995d28acbab65283652192a2d97393f50de0dbae478bd356c12d09ebe"
+    },
+    {
+      "path": "glyphs/v0_1/rp_g05_neutral_variant.svg",
+      "role": "gate-file",
+      "bytes": 610,
+      "sha256": "9cbe50b63e497eca7a07a871885d0344f069149187f4c4d90bb6c6b22a093465"
+    },
+    {
+      "path": "glyphs/v0_1/rp_g06_weak_variant.svg",
+      "role": "gate-file",
+      "bytes": 571,
+      "sha256": "32ff2e96571b4030736f328257cdb78692e9bef441ba00e0a681bd411992d4d2"
+    },
+    {
+      "path": "core_0_1_glyph_encoding.py",
+      "role": "gate-file",
+      "bytes": 3071,
+      "sha256": "3b556288a7c7d35c6e75d890f4aee7fc5de0635dafd93c5a61afed49968d6d59"
+    },
+    {
+      "path": "test_core_0_1_glyph_encoding.py",
+      "role": "gate-file",
+      "bytes": 4635,
+      "sha256": "0b782c3e4008211a4c18c69bafdb79dc4737522e04977927a6bee475208ef71b"
+    },
+    {
+      "path": "run_core_0_1_glyph_encoding_checks.py",
+      "role": "gate-file",
+      "bytes": 2331,
+      "sha256": "3512cd23079a4dd542dc8febbc3a8a58037510aa03600523d07caf06ab6dde15"
+    },
+    {
+      "path": ".vscode/reubarb-glyphs.code-snippets",
+      "role": "gate-file",
+      "bytes": 803,
+      "sha256": "b299b9622983a743c2a67067429092a201e749a0dcaf8fc1009e10d06f114da0"
+    },
+    {
+      "path": "core_0_1_glyph_recognizer.py",
+      "role": "gate-file",
+      "bytes": 2905,
+      "sha256": "5a31fd1eafc982728d04bea27c27abaa747b2ffcb8fa212a1e7df0ace5433f5d"
+    },
+    {
+      "path": "test_core_0_1_glyph_recognizer.py",
+      "role": "gate-file",
+      "bytes": 7070,
+      "sha256": "5eba9666d55627e922f09a1076d38e320a2f4b571321d0b79520121793a8ad9e"
+    },
+    {
+      "path": "run_core_0_1_glyph_recognition_checks.py",
+      "role": "gate-file",
+      "bytes": 2284,
+      "sha256": "037e12d943975cb667b765a8216d01565e934f10a04436e3611e62ac2dea3ce8"
+    },
+    {
+      "path": "core_0_1_glyph_display.py",
+      "role": "gate-file",
+      "bytes": 1993,
+      "sha256": "1fa08339fbad17d37572fc38fbbba7332fbe008b7320e1a4f28bb65287642bc8"
+    },
+    {
+      "path": "test_core_0_1_glyph_display.py",
+      "role": "gate-file",
+      "bytes": 4951,
+      "sha256": "e6eede78bcbd221475ab34ef876c29b1fb46ef096c04c60bf1d4613076bba74b"
+    },
+    {
+      "path": "run_core_0_1_glyph_display_checks.py",
+      "role": "gate-file",
+      "bytes": 2323,
+      "sha256": "83aa768e8225876b47c8173fc30e67cd388ce21b03e79868f9b333ceea146b76"
+    },
+    {
+      "path": "reubarb_glyph_encoding_preview.html",
+      "role": "gate-file",
+      "bytes": 3416,
+      "sha256": "1c355ed8bd4a74465f25585470937b38580aa3376d574afb608a885e449ed9c1"
+    },
+    {
+      "path": "test_core_0_1_glyph_font.py",
+      "role": "gate-file",
+      "bytes": 9051,
+      "sha256": "c452c3bd8f9be5d9a25b89cce04b7b24bee98acd330ef2c79891c6a041956b74"
+    },
+    {
+      "path": "core_0_1_glyph_source_integration.py",
+      "role": "gate-file",
+      "bytes": 12129,
+      "sha256": "bc0dd33219a1e3887dc6092f15f8522c1c4d34c204fb62ca2e94622032b7c38c"
+    },
+    {
+      "path": "test_core_0_1_glyph_source_integration.py",
+      "role": "gate-file",
+      "bytes": 5604,
+      "sha256": "f4ce4f77f29ff4c523559f80912545f3fa131924f9784cbde83f0cc9782e0156"
+    },
+    {
+      "path": "run_core_0_1_glyph_source_integration_checks.py",
+      "role": "gate-file",
+      "bytes": 1102,
+      "sha256": "12f9c286a45251d80562884c0839af692b400c7f570a60f349b0fda03075fcef"
+    },
+    {
+      "path": "core_0_1_glyph_identity_value.py",
+      "role": "gate-file",
+      "bytes": 8105,
+      "sha256": "2e8225425682078928ce2696431e10c41d63e4773d433579053cfd8d74d3f8c8"
+    },
+    {
+      "path": "test_core_0_1_glyph_identity_value.py",
+      "role": "gate-file",
+      "bytes": 13548,
+      "sha256": "03840edd228e368090494706f41b48bc3fd6cd1e153a6b7adb67a683908e4282"
+    },
+    {
+      "path": "run_core_0_1_glyph_identity_value_checks.py",
+      "role": "gate-file",
+      "bytes": 1179,
+      "sha256": "bb0dc34fc1ede7f650efe896fecb3bb0e5095d486ae2b99c353a536b433e8f74"
+    },
+    {
+      "path": "core_0_1_occurrence_continuity.py",
+      "role": "gate-file",
+      "bytes": 9079,
+      "sha256": "a0276731b3a675bfeb9236b03a5ff0d61d4696e39460d8604f8ca5f4d278d588"
+    },
+    {
+      "path": "test_core_0_1_occurrence_continuity.py",
+      "role": "gate-file",
+      "bytes": 19775,
+      "sha256": "b18b6a0c4f78b0cf62bb885c77f42c175865843fbe0354dd3c5ca8780b5d87f2"
+    },
+    {
+      "path": "run_core_0_1_occurrence_continuity_checks.py",
+      "role": "gate-file",
+      "bytes": 1574,
+      "sha256": "2afc437ed26b9307e02b10d66291bf1ceea372dcd8f65e866ca9d642e875f3fd"
+    },
+    {
+      "path": "test_core_0_1_glyph_identity_path.py",
+      "role": "gate-file",
+      "bytes": 21529,
+      "sha256": "65db915aab97f8ae2dd4d276fdac7c255e92ecd6ccf45284a2d5ab16a8c339a6"
+    },
+    {
+      "path": "run_core_0_1_glyph_identity_path_checks.py",
+      "role": "gate-file",
+      "bytes": 1700,
+      "sha256": "32c18c267210c194f57dee3008abfb3dbcaf2c33e42b5fd56717b7b47a18aba9"
+    },
+    {
+      "path": "test_core_0_1_reviewed_text_path.py",
+      "role": "gate-file",
+      "bytes": 15910,
+      "sha256": "453c3dcd9bf9801403efd3fa254b66b02fc9aade13ff8d0307439644170a1c6a"
+    },
+    {
+      "path": "run_core_0_1_reviewed_text_path_checks.py",
+      "role": "gate-file",
+      "bytes": 1697,
+      "sha256": "88ea8a5acfd6818aa71b5c61d446ce6e4c915b474752563c560ee845c50fede6"
+    },
+    {
+      "path": "run_core_0_1_checks_full.py",
+      "role": "gate-file",
+      "bytes": 743,
+      "sha256": "fab55387b71bb4fc4a9c87c81c363c7395ac92eba4c48952f5494d0da7c0c326"
+    },
+    {
+      "path": "run_core_0_1_foundation_checks.py",
+      "role": "gate-file",
+      "bytes": 695,
+      "sha256": "966b4549cbab1a8430a1a38b148e3323b2cdf0df5739f969c96308c508692e62"
+    },
+    {
+      "path": "build_reubarb_font.py",
+      "role": "gate-file",
+      "bytes": 21419,
+      "sha256": "6f1e5bb2395c2a835a785c3dc8a817ce8485112c99ed1ce6beeb51e3ea47e30d"
+    },
+    {
+      "path": "check_reubarb_font.py",
+      "role": "gate-file",
+      "bytes": 13235,
+      "sha256": "2d4c0a2a1f10d496a517b199d201643bb07b5a0280c04eaee10739b00e5c0711"
+    },
+    {
+      "path": "check_reubarb_font_windows.ps1",
+      "role": "gate-file",
+      "bytes": 3995,
+      "sha256": "3132ea9001a5ee6569ea14c075d236b79b48b2eb814ae5ec3d9ad3bcfdcb0747"
+    },
+    {
+      "path": "font-build-requirements.txt",
+      "role": "gate-file",
+      "bytes": 782,
+      "sha256": "5d99662b432fb5c6a574ea1587369c64d471026d7f22d5a197b69b1d95406020"
+    },
+    {
+      "path": "fonts/v0_1/ReubarbPiSymbols-Regular.ttf",
+      "role": "gate-file",
+      "bytes": 7492,
+      "sha256": "3535d0845348c0d9d3e64560897df023a0edbb837a96e2b85741d54ec71c3595"
+    },
+    {
+      "path": "fonts/v0_1/font-manifest.json",
+      "role": "gate-file",
+      "bytes": 7847,
+      "sha256": "6ab1b71692bad7c62b8fa4cac6e51b04f100a7865ebc5f35325bcee8fabd9b3f"
+    },
+    {
+      "path": "fonts/v0_1/font-validation.json",
+      "role": "gate-file",
+      "bytes": 2918,
+      "sha256": "ee501e5c3068dc0197fe87953f6684079cdc120ef9c2b249874c7d377138767e"
+    },
+    {
+      "path": "fonts/v0_1/font-proof.png",
+      "role": "gate-file",
+      "bytes": 96979,
+      "sha256": "48343c3dc758333227289935ef29ff86cd97bb695e27fd9a93ff3b3075359566"
+    },
+    {
+      "path": "fonts/v0_1/font-preview.html",
+      "role": "gate-file",
+      "bytes": 19897,
+      "sha256": "9e3812f07b59b2da71b86a9d7a563cc332efacb6942c581e63a05e2546ee2c2e"
+    },
+    {
+      "path": "fonts/v0_1/glyph-specimen.gart",
+      "role": "gate-file",
+      "bytes": 257,
+      "sha256": "61da3a5ce462e3bb514e63eb4f3e84bf146caa1e24d7e91210a7841ac27077ee"
+    },
+    {
+      "path": "fonts/v0_1/tool-licenses/fonttools--licenses_LICENSE",
+      "role": "build-tool-license",
+      "bytes": 1093,
+      "sha256": "22bef80697ecfaa17f97e62b9a26dfa12820be05583e8dd12ad169b241274c99"
+    },
+    {
+      "path": "fonts/v0_1/tool-licenses/fonttools--licenses_LICENSE.external",
+      "role": "build-tool-license",
+      "bytes": 20410,
+      "sha256": "b082a5f86775b2641f01bccb8b9c82908481de5f502bb254b1e13bfc2a9f303d"
+    },
+    {
+      "path": "fonts/v0_1/tool-licenses/skia-python--licenses_LICENSE",
+      "role": "build-tool-license",
+      "bytes": 1551,
+      "sha256": "d4ce9ee9fbe1216f18d2c51b09e43858cf9ab85579dbf4979da8d4b0dc1061da"
+    },
+    {
+      "path": "fonts/v0_1/tool-licenses/numpy--licenses_LICENSE.txt",
+      "role": "build-tool-license",
+      "bytes": 45831,
+      "sha256": "a804dff0ead9fadc5293456410bcbfc32bf024be9c4513459663fb7b442d2341"
+    },
+    {
+      "path": "fonts/v0_1/tool-licenses/numpy--licenses_numpy__core_include_numpy_libdivide_LICENSE.txt",
+      "role": "build-tool-license",
+      "bytes": 1039,
+      "sha256": "d544761558b510866c21f7e8a2d5716fca76e0b98117e3b6b86314db7244d150"
+    },
+    {
+      "path": "fonts/v0_1/tool-licenses/numpy--licenses_numpy__core_src_common_pythoncapi-compat_COPYING",
+      "role": "build-tool-license",
+      "bytes": 704,
+      "sha256": "aea41976c720f91bd19725c16916a1ace40eb1ea42620d340e587a5de4bbcea0"
+    },
+    {
+      "path": "fonts/v0_1/tool-licenses/numpy--licenses_numpy__core_src_highway_LICENSE",
+      "role": "build-tool-license",
+      "bytes": 21155,
+      "sha256": "d208152e2777ffd0126eacc1bd21c0320d69e4e6b622d21a2a12a47e8ef73763"
+    },
+    {
+      "path": "fonts/v0_1/tool-licenses/numpy--licenses_numpy__core_src_multiarray_dragon4_LICENSE.txt",
+      "role": "build-tool-license",
+      "bytes": 1441,
+      "sha256": "b0fd592d4ead563148e3977e7b589169d46a5ef2ff133c755a81af880a3fc919"
+    },
+    {
+      "path": "fonts/v0_1/tool-licenses/numpy--licenses_numpy__core_src_npysort_x86-simd-sort_LICENSE.md",
+      "role": "build-tool-license",
+      "bytes": 1542,
+      "sha256": "a732977853530066790c42817087f4829b518dd98d340c916acbfd227e39d3cb"
+    },
+    {
+      "path": "fonts/v0_1/tool-licenses/numpy--licenses_numpy__core_src_umath_svml_LICENSE",
+      "role": "build-tool-license",
+      "bytes": 1573,
+      "sha256": "585483905b13d4b42f800c55ba99e89d6e2e33ccd5f503e201c07531d148ff41"
+    },
+    {
+      "path": "fonts/v0_1/tool-licenses/numpy--licenses_numpy_fft_pocketfft_LICENSE.md",
+      "role": "build-tool-license",
+      "bytes": 1523,
+      "sha256": "8db000e158c162e7249787852d8c69764706502ccee725c06641b31c1e95c8af"
+    },
+    {
+      "path": "fonts/v0_1/tool-licenses/numpy--licenses_numpy_linalg_lapack_lite_LICENSE.txt",
+      "role": "build-tool-license",
+      "bytes": 2314,
+      "sha256": "19060ef465e1797d682ee0fc3081bd25ab1395e995e43d25c9d13c95d9a3cd6b"
+    },
+    {
+      "path": "fonts/v0_1/tool-licenses/numpy--licenses_numpy_ma_LICENSE",
+      "role": "build-tool-license",
+      "bytes": 1616,
+      "sha256": "d78dbb208b80d92b4d333e41a4baae50d12444f46e53199fa7726a91de6e2da7"
+    },
+    {
+      "path": "fonts/v0_1/tool-licenses/numpy--licenses_numpy_random_LICENSE.md",
+      "role": "build-tool-license",
+      "bytes": 3582,
+      "sha256": "b4bc2f4fa1c95778f1ed3dd8f14706bece399475b978f9f34b5d3cd72521b48a"
+    },
+    {
+      "path": "fonts/v0_1/tool-licenses/numpy--licenses_numpy_random_src_distributions_LICENSE.md",
+      "role": "build-tool-license",
+      "bytes": 2805,
+      "sha256": "cf5619f25b112d5ce7c896efffc8e610bcb345dfadcc19f2c1460aa48fff2c9e"
+    },
+    {
+      "path": "fonts/v0_1/tool-licenses/numpy--licenses_numpy_random_src_mt19937_LICENSE.md",
+      "role": "build-tool-license",
+      "bytes": 2986,
+      "sha256": "92c10699884321f1c2947fe2a70ab23b0fbf1507f756d89dd08f38c61fc3d4fa"
+    },
+    {
+      "path": "fonts/v0_1/tool-licenses/numpy--licenses_numpy_random_src_pcg64_LICENSE.md",
+      "role": "build-tool-license",
+      "bytes": 1176,
+      "sha256": "41190663b77bee5302386495a07b7eabfbfa571aa0ae2f11da6764162062fc4f"
+    },
+    {
+      "path": "fonts/v0_1/tool-licenses/numpy--licenses_numpy_random_src_philox_LICENSE.md",
+      "role": "build-tool-license",
+      "bytes": 1540,
+      "sha256": "322ac46d870c8aeead6c53adcccc839296fb3c8e456eae155081297daf7f8013"
+    },
+    {
+      "path": "fonts/v0_1/tool-licenses/numpy--licenses_numpy_random_src_sfc64_LICENSE.md",
+      "role": "build-tool-license",
+      "bytes": 1253,
+      "sha256": "28cad82ce1379dc529df30da78ec012d7d0d1d576b03ddcb93388aee53659f59"
+    },
+    {
+      "path": "fonts/v0_1/tool-licenses/numpy--licenses_numpy_random_src_splitmix64_LICENSE.md",
+      "role": "build-tool-license",
+      "bytes": 340,
+      "sha256": "454ec7350e478e037061850b67395753b425b1cb0a34bbc26290b020bf89d763"
+    },
+    {
+      "path": "fonts/v0_1/tool-licenses/numpy--_core_include_numpy_random_LICENSE.txt",
+      "role": "build-tool-license",
+      "bytes": 1039,
+      "sha256": "d544761558b510866c21f7e8a2d5716fca76e0b98117e3b6b86314db7244d150"
+    },
+    {
+      "path": "fonts/v0_1/tool-licenses/numpy--ma_LICENSE",
+      "role": "build-tool-license",
+      "bytes": 1616,
+      "sha256": "d78dbb208b80d92b4d333e41a4baae50d12444f46e53199fa7726a91de6e2da7"
+    },
+    {
+      "path": "fonts/v0_1/tool-licenses/numpy--random_LICENSE.md",
+      "role": "build-tool-license",
+      "bytes": 3582,
+      "sha256": "b4bc2f4fa1c95778f1ed3dd8f14706bece399475b978f9f34b5d3cd72521b48a"
+    },
+    {
+      "path": "fonts/v0_1/tool-licenses/pybind11--licenses_LICENSE",
+      "role": "build-tool-license",
+      "bytes": 1684,
+      "sha256": "83965b843b98f670d3a85bd041ed4b372c8ec50d7b4a5995a83ac697ba675dcb"
+    },
+    {
+      "path": "fonts/v0_1/tool-licenses/opentype-sanitizer--LICENSE",
+      "role": "build-tool-license",
+      "bytes": 1512,
+      "sha256": "cde9fcfb4de5723c4ad9a1ae20902b67860f863db7ffdf1d8ce20aebc594dcae"
+    },
+    {
+      "path": "fonts/v0_1/tool-licenses/uharfbuzz--licenses_LICENSE",
+      "role": "build-tool-license",
+      "bytes": 11558,
+      "sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6"
+    },
+    {
+      "path": "CORE_0_1_CONTRACT.md",
+      "role": "contract",
+      "bytes": 47278,
+      "sha256": "fb60f29f989e542f7b00024701c2cb3fd21a9a22012302107bf51e290bc47b42"
+    },
+    {
+      "path": "verify_core_0_1_inventory.ps1",
+      "role": "inventory-verifier",
+      "bytes": 4128,
+      "sha256": "1c5b3a862490f1366c4f4d022b73bac0db5433a6655d6ab29344733239bd9082"
+    }
+  ]
+}

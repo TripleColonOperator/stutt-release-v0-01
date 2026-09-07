@@ -1,0 +1,13 @@
+FONTLOG for Reubarb Pi Symbols
+
+2026-09-07 — Core 0.1 public package
+- Released ReubarbPiSymbols-Regular.ttf under SIL OFL 1.1.
+- Included five mappings U+E100 through U+E104 and their canonical SVG sources.
+- Included the existing build manifest, validation record, proof and previews.
+- No Reserved Font Name is declared.
+
+Known limits
+- This is a five-glyph Private Use Area font, not a general text font.
+- Font rendering is display only and does not extend Reubarb syntax.
+- Cross-platform rendering has not been tested on every system or application.
+- The recorded historical validation used the tool versions in font-manifest.json.

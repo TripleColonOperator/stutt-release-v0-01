@@ -1,0 +1,9 @@
+# I-13 build/QA only; CPython 3.13, Windows x64. No runtime dependency.
+# Exact official PyPI wheel hashes inspected 2026-09-05.
+# Install with --require-hashes --only-binary=:all: --no-deps.
+fonttools==4.64.0 --hash=sha256:e4812f71c39d77ec5041348dafa400532adf7bf8f1fffa9aa6495fce5876d7b8
+skia-python==144.0.post2 --hash=sha256:eb2a31e2eee1f8f8626d20cff7fc4655495b4a05e30e8803454e4f7de4ef89eb
+numpy==2.5.2 --hash=sha256:85aaccb24182c25df891ad0ec333585967e115269d5f1b17f2c9ae005bc96657
+pybind11==3.1.0 --hash=sha256:b8488090f8acffbcb6b5d6a85571a6827a0a2981ffb75e5a0b27b87c4a6b7dd0
+opentype-sanitizer==9.2.0 --hash=sha256:4638a4ba50fb1211004cbb2d620cfc0cc8aa936c42fef64efec8f07987c3210f
+uharfbuzz==0.56.1 --hash=sha256:ee99ae2389d4f8c5651962d65bf8fe9296c781598e3f697ba26d51c4b20527f9

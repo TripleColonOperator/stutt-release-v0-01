@@ -1,5 +1,29 @@
 # Changelog
 
+## v0.1.2-beta - 2026-09-07
+
+### Added
+
+- Publish the frozen Reubarb Pi Core 0.1 Foundation in
+  `reubarb_core_0_1/`, including its contract, reference modules, native glyph
+  sources, compiled font, previews, 400-test fixed regression suite, and
+  91-file SHA256 inventory.
+- Add explicit MIT and SIL Open Font License 1.1 scope, the complete OFL text,
+  FONTLOG, and retained third-party font-tool notices.
+- Add a standalone Core quickstart and integrity-check procedure.
+
+### Verification and limits
+
+- The source freeze inventory and all 400 Foundation tests pass under Python
+  3.13.15 on Windows. A clean public-copy verification is run before tagging.
+- Core 0.1 is the bounded Foundation, not the complete language. Stage 0.2
+  values, bindings, expressions, evaluation, Source machinery, executable
+  `RECON`, and broader assistant integration remain future work.
+- The existing STUTT command path is not changed by this release. Its asset
+  convenience commands do not automatically search the Core subdirectory.
+- No BHS PDF, private transcript, credential, model weight, local log, or
+  temporary environment is included.
+
 ## v0.1.1-beta - 2026-09-05
 
 This beta repairs the standalone STUTT command prototype and makes optional model
